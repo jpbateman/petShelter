@@ -1,0 +1,5 @@
+.display_box{
+    border: solid black 2px;
+    border-radius: 5%;
+    width:50%;
+}

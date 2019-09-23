@@ -1,0 +1,14 @@
+<a style="margin-left: 600px;" routerLink="/pets">Home</a>
+<h3>Details about {{pet.name}}</h3>
+<div *ngIf="pet" class="display_box">
+    <h4>Pet type:    {{pet.type}}</h4>
+    <h4>Description:    {{pet.desc}}</h4>
+    <h4>Skills:    <p style="margin-left: 15px;">{{pet.skill1}} <br> {{pet.skill2}}<br> {{pet.skill3}}</p></h4>
+    <h4>Likes:    {{pet.likes}}</h4>
+    <div style="display:flex;">
+        <button class="btn btn-primary" type="button" (click)="handleLike(pet._id)">Like this Pet</button>
+        <button class="btn btn-success" type="button" (click)="handleAdopt(pet._id)">Adopt this Pet</button>
+    </div>
+</div>
+
+
